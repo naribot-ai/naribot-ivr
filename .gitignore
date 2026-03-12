@@ -205,3 +205,21 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# --- NariBot Specifics ---
+# Ignore actual audio files (keep them in Cloud Storage)
+*.mp3
+*.wav
+*.ogg
+
+# Ignore Firebase & Google Cloud specific local logs/config
+.firebase/
+firebaserc
+firebase-debug.log
+.gcloudignore
+
+# Ignore Google Service Account keys (The "Secret" keys)
+service-account-key.json
+*.pem
+secrets.yaml
